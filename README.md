@@ -2,7 +2,7 @@
 
 ![Cover Image](media/cover_image.png)
 
-You can find the public Edge Impulse project here:  [Environment hearing aider](https://studio.edgeimpulse.com/public/171255/latest) .  To add this project into your account projects, click “Clone this project”  at the top of the window.
+You can find the public Edge Impulse project here:  [Environment hearing aider](https://studio.edgeimpulse.com/public/171255/latest). To add this project into your account projects, click “Clone this project” at the top of the window. Read up on the project's documentation on [Edge Impulse's page](https://www.edgeimpulse.com/blog/now-hear-this) to help you get started on your own creation.
 
 The [Arduino code](syntiant-tinyml-firmware-environment-hearing-aider.ino) turns GPIO 1 HIGH when ambulance, firetruck or car siren/horn sounds are detected. Attached to GPIO 1 can be a vibration motor which will vibrate for 1500 milliseconds.
 
