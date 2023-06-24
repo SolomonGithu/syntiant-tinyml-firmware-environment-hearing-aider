@@ -1,16 +1,28 @@
-## A Smart Watch-Out :watch: :ear:
+# TinyML wearable for environmental sensing :ear:
 
-![Cover Image](media/cover_image.png)
+![Cover Image](media/cover%20image.png)
 
-You can find the public Edge Impulse project here:  [Environment hearing aider](https://studio.edgeimpulse.com/public/171255/latest). To add this project into your account projects, click “Clone this project” at the top of the window. Read up on the project's documentation on [Edge Impulse's page](https://www.edgeimpulse.com/blog/now-hear-this) to help you get started on your own creation.
+You can find the public Edge Impulse project here:  [Environment hearing aider](https://studio.edgeimpulse.com/public/171255/latest). To add this project into your account projects, click “Clone this project” at the top of the window. Please up on the project's documentation on [Edge Impulse's page](https://www.edgeimpulse.com/blog/now-hear-this) to help you get started on your own creation.
 
-The [Arduino code](syntiant-tinyml-firmware-environment-hearing-aider.ino) turns GPIO 1 HIGH when ambulance, firetruck or car siren/horn sounds are detected. Attached to GPIO 1 can be a vibration motor which will vibrate for 1500 milliseconds.
+The [Arduino code](syntiant-tinyml-firmware-environment-hearing-aider.ino) turns GPIO 1 HIGH when ambulance, firetruck or car siren/horn sounds are detected. GPIO 1 is then used to trigger a motor control circuit that creates a vibration.
+
+The wearable's casing and wrist straps are available for download from [printables.com](https://www.printables.com/model/511919-syntiant-tinyml-wearable).
 
 ----
+
 ## Config build and flash
 
-This project uses the `arduino-cli` compiler to build & flash new firmware. Windows users also need Arduino IDE (tested with v1.8.15).
+This project uses the `arduino-cli` compiler to build & flash new firmware. You can also use the Arduino IDE to compile and upload the code (tested with v1.8.15).
 
+### Usage - Windows
+
+* Run `update_libraries_windows.bat` script to install Arduino libraries.
+> **Note:** If you are using the Arduino IDE downloaded from the Window Store you need to download the Arduino SAMD BOARDS (32-bits ARM Cortex-M0+) version 1.8.9 manually from the Boards Manager.
+
+* For audio support:
+
+    * Open the `firmware-syntiant-tinyml.ino` with the Arduino IDE.
+    * Select MKRZero as board target and compile/upload.
 
 ### Usage - macOS and Linux
 
@@ -41,25 +53,6 @@ You can also do both by using:
 ```
 ./arduino-build.sh --all [--with-imu]
 ```
-
-
-### Usage - Windows
-
-* Run `update_libraries_windows.bat` script to install Arduino libraries.
-> **Note:** If you are using the Arduino IDE downloaded from the Window Store you need to download the Arduino SAMD BOARDS (32-bits ARM Cortex-M0+) version 1.8.9 manually from the Boards Manager.
-
-* For audio support:
-
-    * Open the `firmware-syntiant-tinyml.ino` with the Arduino IDE.
-    * Select MKRZero as board target and compile/upload.
-
-* For IMU sensor support:
-    * Open the `src/syntiant.cpp` file and uncomment the following line:
-    ```
-    //#define WITH_IMU
-    ```
-    * Open the `firmware-syntiant-tinyml.ino` with the Arduino IDE.
-    * Select MKRZero as board target and compile/upload.
 
 ### Usage - Different classes :rocket:
 
