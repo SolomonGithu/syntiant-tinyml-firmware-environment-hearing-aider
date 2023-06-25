@@ -28,6 +28,11 @@ Below is the circuit layout. It consists of the following components:
 - Some jumper wires and male header pins
 
 ![Circuit layout](media/circuit%20layout.png)
+
+Once the electronic parts have been assembled, they can be put in the wearable's case according to the layout in the image below.
+
+![Components layout](media/components%20layout.png)
+
 ----
 
 ## Config build and flash
