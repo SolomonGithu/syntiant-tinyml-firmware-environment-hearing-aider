@@ -10,6 +10,24 @@ The [Arduino code](syntiant-tinyml-firmware-environment-hearing-aider.ino) turns
 
 The wearable's casing and wrist straps are available for download from [printables.com](https://www.printables.com/model/511919-syntiant-tinyml-wearable).
 
+
+![Wearable responding to siren sound](media/wearable%20responding%20to%20siren%20sounds.gif)
+
+A video showing the wearable's vibration test performance:
+
+![Wearable vibration test](media/wearable%20vibration%20test.gif)
+
+Below is the circuit layout. It consists of the following components:
+- [Syntiant TinyML board](https://www.digikey.com/en/products/detail/syntiant-corp/SYNTIANT-TINYML/15293343?s=N4IgTCBcDaIM4E8B2AXAlgQ1SAugXyA)
+- [Vibration motor module](https://www.amazon.com/ZYM119-Vibration-Switch-Vibrator-Circuit/dp/B09M84JF6B/ref=sr_1_5?crid=1JOJC8SZS6KR7&keywords=vibration+motor+module&qid=1683818656&sprefix=vibration+motor+module%27%2Caps%2C941&sr=8-5)
+- [3.7V LiPo battery](https://www.adafruit.com/product/1578). I used one with 500mAh
+- Veroboard/stripboard
+- 1 220 Ω resistor – one end connects to the Syntiant GPIO 1, the other ends connects to base of transistor
+- 1 2N3904 transistor
+- 1 5.7 k Ω resistor - one end connects to the positive terminal of the battery, the other end connects to the collector of the transistor.
+- Some jumper wires and male header pins
+
+![Circuit layout](media/circuit%20layout.png)
 ----
 
 ## Config build and flash
