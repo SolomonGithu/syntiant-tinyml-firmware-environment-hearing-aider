@@ -8,7 +8,7 @@ On Edge Impulse Studio, the Impulse was deployed as an optimized Syntiant NDP 10
 
 The [Arduino code](syntiant-tinyml-firmware-environment-hearing-aider.ino) turns GPIO 1 HIGH when ambulance, firetruck or car siren/horn sounds are detected. GPIO 1 is then used to trigger a motor control circuit that creates a vibration.
 
-The wearable's casing and wrist straps are available for download from [printables.com](https://www.printables.com/model/511919-syntiant-tinyml-wearable).
+The wearable's casing and wrist straps are available for download from [printables.com](https://www.printables.com/model/511919-syntiant-tinyml-wearable) or [thingiverse.com](https://www.thingiverse.com/thing:6092871)
 
 
 ![Wearable responding to siren sound](media/wearable%20responding%20to%20siren%20sounds.gif)
