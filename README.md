@@ -4,6 +4,8 @@
 
 You can find the public Edge Impulse project here:  [Environment hearing aider](https://studio.edgeimpulse.com/public/171255/latest). To add this project into your account projects, click “Clone this project” at the top of the window. Please up on the project's documentation on [Edge Impulse's page](https://www.edgeimpulse.com/blog/now-hear-this) to help you get started on your own creation.
 
+On Edge Impulse Studio, the Impulse was deployed as an optimized Syntiant NDP 101/120 library. This packages all the signal processing blocks, configuration and learning blocks up into a single package. Afterwards, a custom Arduino code was written to analyze the predicted classes.
+
 The [Arduino code](syntiant-tinyml-firmware-environment-hearing-aider.ino) turns GPIO 1 HIGH when ambulance, firetruck or car siren/horn sounds are detected. GPIO 1 is then used to trigger a motor control circuit that creates a vibration.
 
 The wearable's casing and wrist straps are available for download from [printables.com](https://www.printables.com/model/511919-syntiant-tinyml-wearable).
