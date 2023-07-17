@@ -2,7 +2,7 @@
 
 ![Cover Image](media/cover%20image.png)
 
-You can find the public Edge Impulse project here:  [Environment hearing aider](https://studio.edgeimpulse.com/public/171255/latest). To add this project into your account projects, click “Clone this project” at the top of the window. Please up on the project's documentation on [Edge Impulse's page](https://www.edgeimpulse.com/blog/now-hear-this) to help you get started on your own creation.
+You can find the public Edge Impulse project here:  [Environment hearing aider](https://studio.edgeimpulse.com/public/171255/latest). To add this project into your account projects, click “Clone this project” at the top of the window. Please read up on the project's documentation on [Edge Impulse's page](https://www.edgeimpulse.com/blog/now-hear-this) to help you get started on your own creation.
 
 On Edge Impulse Studio, the Impulse was deployed as an optimized Syntiant NDP 101/120 library. This packages all the signal processing blocks, configuration and learning blocks up into a single package. Afterwards, a custom Arduino code was created to analyze the predicted classes.
 
